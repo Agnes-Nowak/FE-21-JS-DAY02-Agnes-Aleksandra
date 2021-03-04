@@ -13,14 +13,19 @@ You should get the following results:
 You are either 29 or 28
 Hint: you can take a look on Date() function https://www.w3schools.com/js/js_date_methods.asp -->
     <script>
-
+/*
     function ageCalculator(birthDay) {
        var getDate = 2021;
        var yourAge = getDate - birthDay;
        return yourAge;
     }
     console.log(ageCalculator(1950));    /* prints: 71 */
-
+    function ageCalc (birthYear) {
+        var d = new Date();
+        var sum = d.getFullYear() - birthYear;
+        return sum;
+    }
+    console.log(ageCalc(1970));
     
     // var age = birthDay => getDate-1950;   
     // var getDate = 2021;
