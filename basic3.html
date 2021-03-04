@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
+
+    <body>
     <!-- Basic 3 | Age Calculator-improved
 Enhance your previous exercise in terms of how to get the current year in JavaScript instead of passing it in. Provide the same results just through passing one argument.
 You should get the following results:
@@ -15,17 +15,33 @@ Hint: you can take a look on Date() function https://www.w3schools.com/js/js_dat
     <script>
 
     function ageCalculator(birthDay) {
-       var getDate = 2021;
-       var yourAge = getDate - birthDay;
+        var date = new Date();
+        var currentYear = date.getFullYear()
+       var yourAge = currentYear - birthDay;
        return yourAge;
     }
+
     console.log(ageCalculator(1950));    /* prints: 71 */
 
-    
+   
+
+    // console.log(empty[0])
     // var age = birthDay => getDate-1950;   
     // var getDate = 2021;
     // console.log(age(1980));
 
+
+
+
+
+     // function PrintI(i){
+    //     console.log(i);
+    // }
+    // var array = [7,9,4];
+    // var empty = [];
+    // for( var i in array){
+    //     empty.push(function(){PrintI(i)})
+    // } 
     </script>
 </body>
 </html>
